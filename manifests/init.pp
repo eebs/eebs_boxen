@@ -11,4 +11,5 @@ class eebs_boxen {
     # Custom classes
     include eebs_boxen::dotfiles
     include eebs_boxen::gitoverrides
+    include eebs_boxen::sublime
 }
