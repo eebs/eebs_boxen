@@ -1,0 +1,19 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by file type specific settings.
+{
+	"rulers":
+	[
+		80,
+		110
+	],
+	"translate_tabs_to_spaces": true,
+	"draw_minimap_border": true,
+	"always_show_minimap_viewport": true,
+	"highlight_line": true,
+	"scroll_past_end": true,
+	"ensure_newline_at_eof_on_save": true,
+	"auto_complete_commit_on_tab": true,
+	"find_selected_text": true,
+	"highlight_modified_tabs": true,
+	"show_full_path": true,
+}
