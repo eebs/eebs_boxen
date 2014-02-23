@@ -1,6 +1,6 @@
 [
     {
-        "keys": ["super+k"],
+        "keys": ["super+shift+k"],
         "command": "run_macro_file",
         "args": {
             "file": "Packages/sublime-kurogo-debug/kgo_debug.sublime-macro"
