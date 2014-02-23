@@ -4,12 +4,23 @@ class eebs_boxen {
 	include chrome
     include adium
     include vlc
+    include onepassword
+    include dropbox
 
     # Custom packages
     package { "htop": }
+
+    # Custom directories
+    file {
+        [
+            "/Users/${::boxen_user}/code/",
+        ]:
+        ensure  => directory,
+    }
 
     # Custom classes
     include eebs_boxen::dotfiles
     include eebs_boxen::gitoverrides
     include eebs_boxen::sublime
+    include eebs_boxen::ssh
 }
