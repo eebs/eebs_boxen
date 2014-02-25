@@ -6,6 +6,7 @@ class eebs_boxen {
     include vlc
     include onepassword
     include dropbox
+    include tower
 
     # Custom packages
     package { "htop": }
