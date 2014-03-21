@@ -11,14 +11,6 @@ class eebs_boxen {
     # Custom packages
     ensure_packages(['htop'])
 
-    # Custom directories
-    file {
-        [
-            "/Users/${::boxen_user}/code/",
-        ]:
-        ensure  => directory,
-    }
-
     # Custom classes
     include eebs_boxen::dotfiles
     include eebs_boxen::gitoverrides
