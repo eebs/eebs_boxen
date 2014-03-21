@@ -9,7 +9,7 @@ class eebs_boxen {
     include tower
 
     # Custom packages
-    package { "htop": }
+    ensure_packages(['htop'])
 
     # Custom directories
     file {
