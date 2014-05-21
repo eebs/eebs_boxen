@@ -1,20 +1,15 @@
 class eebs_boxen::dotfiles {
 
     $home     = "/Users/${::boxen_user}"
-    $code     = "${home}/code"
-    $eebs     = "${code}/eebs"
-    $dotfiles = "${eebs}/dotfiles"
+    $my       = "${home}/my"
+    $dotfiles = "${my}/dotfiles"
 
-    file {
-        [
-            $code,
-            $eebs
-        ]:
-        ensure => directory,
+    file { $my:
+        ensure  => directory
     }
 
     repository { $dotfiles:
         source  => 'eebs/dotfiles',
-        require => File[$eebs],
+        require => File[$my],
     }
 }
