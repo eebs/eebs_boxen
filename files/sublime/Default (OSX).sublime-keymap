@@ -5,5 +5,9 @@
         "args": {
             "file": "Packages/sublime-kurogo-debug/kgo_debug.sublime-macro"
         }
+    },
+    {
+        "keys": ["super+shift+f5"],
+        "command": "refresh_folder_list"
     }
 ]
