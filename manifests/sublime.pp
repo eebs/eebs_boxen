@@ -11,6 +11,10 @@ class eebs_boxen::sublime {
         source => 'eebs/sublime-kurogo-debug'
     }
 
+    sublime_text_3::package { 'sublimetext_indentxml':
+        source => 'alek-sys/sublimetext_indentxml'
+    }
+
     file { 'user-preferences':
         path    => '/Users/eebs/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings',
         ensure  => file,

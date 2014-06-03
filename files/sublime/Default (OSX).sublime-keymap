@@ -1,13 +1,23 @@
 [
     {
-        "keys": ["super+shift+k"],
-        "command": "run_macro_file",
         "args": {
             "file": "Packages/sublime-kurogo-debug/kgo_debug.sublime-macro"
-        }
+        },
+        "command": "run_macro_file",
+        "keys": [
+            "super+shift+k"
+        ]
     },
     {
-        "keys": ["super+shift+f5"],
-        "command": "refresh_folder_list"
+        "command": "refresh_folder_list",
+        "keys": [
+            "super+shift+f5"
+        ]
+    },
+    {
+        "command": "auto_indent",
+        "keys": [
+            "super+shift+x"
+        ]
     }
 ]
