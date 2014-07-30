@@ -7,9 +7,11 @@ class eebs_boxen {
     include onepassword
     include dropbox
     include tower
+    include nodejs::v0_10
 
     # Custom packages
     ensure_packages(['htop'])
+    ensure_packages(['bash-completion'])
 
     # Custom classes
     include eebs_boxen::dotfiles
