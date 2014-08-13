@@ -1,0 +1,12 @@
+{
+    "user": {
+        "linters": {
+            "phpcs": {
+                "@disable": false,
+                "args": [],
+                "excludes": [],
+                "standard": "Modo"
+            }
+        }
+    }
+}

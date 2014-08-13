@@ -26,4 +26,10 @@ class eebs_boxen::sublime {
         ensure  => file,
         source  => 'puppet:///modules/eebs_boxen/sublime/Default (OSX).sublime-keymap'
     }
+
+    file { 'SublimeLinter3-user-preferences':
+        path   => '/Users/eebs/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings',
+        ensure => file,
+        source => 'puppet:///modules/eebs_boxen/sublime/SublimeLinter.sublime-settings'
+    }
 }
